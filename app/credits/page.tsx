@@ -1,4 +1,4 @@
-"use client";
+
 
 import { FloatingParticles } from "@/components/FloatingParticles";
 import Link from "next/link";
@@ -18,32 +18,32 @@ interface CreditSection {
 export default function CreditsPage() {
 	const credits: CreditSection[] = [
 		{
-			category: "DEVELOPMENT",
+			category: "DEVELOPMENT TEAM",
 			items: [
 				{
-					role: "Vibe Developer",
-					name: "Lauti",
-					link: "https://x.com/lautidev_",
+					role: "Project Lead & Full Stack Developer",
+					name: "Rohit Mishra (2023-BCS-056)",
+					link: "https://github.com/Rohit318Mishra",
 				},
 				{
-					role: "Vibe Developer",
-					name: "Alejo",
-					link: "https://x.com/alejorrojass",
+					role: "Backend Developer",
+					name: "Md Rezaul (2023-BCS-035)",
+					link: "https://github.com/mdrezaul2005",
 				},
 				{
-					role: "Vibe Developer",
-					name: "Decker",
-					link: "https://x.com/0xDecker",
+					role: "Frontend Developer",
+					name: "Saurav Bhosdiwala (2023-BCS-069)",
+					link: "https://github.com/SauravBhosdiwala",
 				},
 			],
 		},
 		{
-			category: "TECHNOLOGY",
+			category: "TECHNOLOGY STACK",
 			items: [
 				{ role: "Framework", name: "Next.js 14" },
 				{ role: "Language", name: "TypeScript" },
 				{ role: "Styling", name: "Tailwind CSS" },
-				{ role: "Canvas API", name: "HTML5 Canvas" },
+				{ role: "Canvas Engine", name: "HTML5 Canvas API" },
 				{ role: "Database", name: "Supabase" },
 				{ role: "Deployment", name: "Vercel" },
 			],
@@ -66,13 +66,14 @@ export default function CreditsPage() {
 			{/* Credits Content */}
 			<div className="relative z-10 flex flex-col items-center justify-center min-h-dvh p-4">
 				<div className="bg-black/60 backdrop-blur-sm border border-purple-500/30 rounded-lg p-8 w-full max-w-4xl hover:border-purple-500/50 transition-colors">
+					
 					{/* Header */}
 					<div className="text-center mb-8">
 						<h1 className="text-5xl font-bold font-pixel text-transparent bg-clip-text bg-gradient-to-b from-purple-400 to-blue-600 mb-4">
 							CREDITS
 						</h1>
 						<p className="text-gray-300 font-mono text-lg">
-							Created in the Paisanos.io Game Jam
+							Developed by Students of ABV-IIITM Gwalior
 						</p>
 					</div>
 
@@ -81,10 +82,34 @@ export default function CreditsPage() {
 						<h2 className="text-3xl font-bold text-purple-400 font-pixel mb-2">
 							MYSTIC REALM DEFENDER
 						</h2>
-						<p className="text-gray-300 font-mono mb-2">Developed in 1 day</p>
-						<p className="text-gray-400 font-mono text-sm">
-							First Vibe Gaming Hackathon in LATAM - Tech Week Buenos Aires
+						<p className="text-gray-300 font-mono mb-2">
+							A 2D Magical Survival Game built with passion and spells.
 						</p>
+						<p className="text-gray-400 font-mono text-sm">
+							The idea sparked in <span className="text-purple-400">November 2025</span> when{" "}
+							<span className="text-white font-bold">Rohit Mishra</span>, an ardent Harry Potter fan,
+							envisioned a game where players could harness spells, mana, and wizardry to survive
+							in an endless magical realm. What began as a fantasy soon turned into a full-fledged
+							project developed by a dedicated team from ABV-IIITM Gwalior.
+						</p>
+					</div>
+
+					{/* Game Features */}
+					<div className="text-center mb-8 bg-black/40 border border-purple-500/20 rounded-lg p-6">
+						<h3 className="text-2xl font-bold text-purple-400 font-pixel mb-4">
+							⚙️ GAME FEATURES
+						</h3>
+						<ul className="text-gray-300 font-mono text-sm space-y-2 text-left max-w-2xl mx-auto">
+							<li>🧙‍♂️ Play as a wizard and master the art of spellcasting.</li>
+							<li>✨ Use mana-based abilities inspired by magical duels from Harry Potter.</li>
+							<li>🐉 Battle waves of mystical creatures and bosses with increasing difficulty.</li>
+							<li>💎 Collect crystals from defeated enemies to upgrade spells.</li>
+							<li>🌍 Explore dynamic maps, including a realistic IIITM Gwalior layout.</li>
+							<li>🎮 Enjoy smooth controls with WASD and mouse directional aiming.</li>
+							<li>📈 Upgrade and evolve spells through multiple power tiers.</li>
+							<li>💾 Auto-save system with persistent progression and leaderboards.</li>
+							<li>🎵 Magical sound design for an immersive wizarding atmosphere.</li>
+						</ul>
 					</div>
 
 					{/* Credits Sections */}
@@ -101,7 +126,6 @@ export default function CreditsPage() {
 								<div className="space-y-3">
 									{section.items.map((item, itemIndex) => (
 										<div
-											// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
 											key={itemIndex}
 											className="flex justify-between items-center"
 										>
@@ -132,12 +156,11 @@ export default function CreditsPage() {
 					{/* Footer Message */}
 					<div className="text-center mt-8 bg-black/40 border border-purple-500/20 rounded-lg p-6">
 						<p className="text-gray-300 font-mono mb-4">
-							🎮 A game developed by the community during the first Paisanos.io
-							Game Jam
+							🪄 “Magic isn’t only in spells, it’s in creation.” — The Team
 						</p>
 						<p className="text-gray-400 font-mono text-xs">
-							Made with ❤️ in Buenos Aires using Next.js, TypeScript, and
-							creativity
+							Made with ❤️, imagination, and teamwork at Atal Bihari Vajpayee Indian Institute of
+							Information Technology & Management, Gwalior.
 						</p>
 					</div>
 
@@ -153,7 +176,7 @@ export default function CreditsPage() {
 				</div>
 			</div>
 
-			{/* Corner decorative elements */}
+			{/* Decorative Corners */}
 			<div className="absolute top-0 left-0 w-32 h-32 border-l-2 border-t-2 border-purple-500/30" />
 			<div className="absolute top-0 right-0 w-32 h-32 border-r-2 border-t-2 border-purple-500/30" />
 			<div className="absolute bottom-0 left-0 w-32 h-32 border-l-2 border-b-2 border-purple-500/30" />

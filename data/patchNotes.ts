@@ -1,3 +1,4 @@
+ "use client";
 export interface PatchNote {
   version: string;
   date: string;
@@ -13,7 +14,7 @@ export interface PatchNote {
 export const patchNotes: PatchNote[] = [
   {
     version: "v1.1.0",
-    date: "2025-06-07",
+    date: "2025-11-06",
     title: "Map System Update",
     description: "New dynamic map system! Experience different battlefield layouts that change automatically as you progress through the waves.",
     changes: [
